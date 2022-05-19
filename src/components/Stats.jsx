@@ -10,11 +10,11 @@ export const Stats = ({ players }) => {
     <table className="stats">
       <tbody>
         <tr>
-          <td>Players:</td>
+          <td>プレイヤー数:</td>
           <td>{totalPlayers} </td>
         </tr>
         <tr>
-          <td>Total Points:</td>
+          <td>トータルポイント:</td>
           <td>{totalPoints}</td>
         </tr>
       </tbody>

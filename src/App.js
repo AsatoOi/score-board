@@ -61,7 +61,7 @@ export const App = () => {
 
   return (
     <div className="App">
-      <Header title="Scoreboard app" players={players} />
+      <Header title="SCORE-BOARD APP" players={players} />
       <div className="players-list">
         {players.map((player, index) => (
           <Player

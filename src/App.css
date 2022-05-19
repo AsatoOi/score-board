@@ -1,17 +1,21 @@
 body {
-  background-color: #f2f2f2;
+  background-color: #acaeab;
   font-family: "Muli", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 :focus {
   outline: none;
 }
 .App {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
   width: 640px;
   margin: auto;
   overflow: hidden;
   border-radius: 4px;
   margin-top: 2%;
-  border: 1px solid #f2f2f2;
   border-bottom: 1px solid #02aabd;
 }
 .title {
@@ -53,7 +57,7 @@ body {
   color: #999;
 }
 .score-button:hover {
-  background-color: #354451;
+  background-color: #838383;
   color: white;
   cursor: pointer;
 }
@@ -63,12 +67,6 @@ body {
   width: 50px;
   text-align: right;
   padding-right: 20px;
-}
-.increment:hover {
-  background-color: #02aabd;
-}
-.decrement:hover {
-  background-color: red;
 }
 form {
   background-color: #02aabd;
@@ -89,9 +87,6 @@ form input[type="text"] {
 ::placeholder {
   color: white;
 }
-form input[type="text"]:focus {
-  background-color: rgba(0, 0, 0, 0.2);
-}
 form input[type="submit"] {
   background-color: white;
   border: none;
@@ -105,8 +100,8 @@ form input[type="submit"] {
 form input[type="submit"]:hover,
 form input[type="submit"]:focus,
 .stopwatch button:hover {
-  background-color: black;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
   cursor: pointer;
 }
 header {
@@ -114,7 +109,8 @@ header {
   background-color: #02aabd;
 }
 header .stats {
-  width: 20%;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.1);
   display: inline-block;
   color: white;
   font-size: 14px;
@@ -124,7 +120,7 @@ header .stats {
   font-weight: bold;
 }
 header h1 {
-  width: 55%;
+  width: 50%;
   display: inline-block;
   color: white;
   font-size: 24px;
@@ -132,6 +128,7 @@ header h1 {
   text-align: center;
   line-height: 50px;
   vertical-align: middle;
+  padding-top: 15px;
 }
 header .stopwatch {
   width: 25%;
